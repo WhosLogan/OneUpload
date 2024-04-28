@@ -1,0 +1,38 @@
+{
+  "tables": [
+    {
+      "name": "FileRequest",
+      "columns": [
+        {
+          "name": "max_size",
+          "type": "float",
+          "notNull": true,
+          "defaultValue": "0"
+        },
+        {
+          "name": "secret",
+          "type": "string",
+          "unique": true
+        },
+        {
+          "name": "uploaded_file",
+          "type": "file"
+        },
+        {
+          "name": "fulfilled",
+          "type": "bool",
+          "defaultValue": "false"
+        },
+        {
+          "name": "fulfillment_date",
+          "type": "datetime",
+          "defaultValue": "now"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
