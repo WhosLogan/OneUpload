@@ -12,3 +12,4 @@ vite.config.ts.timestamp-*
 /.xata
 .xatarc
 /src/lib/server/xata.js
+/src/lib/server/types.d.ts
