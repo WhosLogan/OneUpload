@@ -27,6 +27,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@auth/sveltekit": "^1.0.1",
 		"@xata.io/client": "^0.29.4"
 	}
 }
