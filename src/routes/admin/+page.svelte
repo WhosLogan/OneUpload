@@ -1,6 +1,6 @@
 <script>
     import {Button} from "flowbite-svelte";
-    import {signIn} from "@auth/sveltekit/client";
+    import {signIn, signOut} from "@auth/sveltekit/client";
     import {page} from "$app/stores";
 </script>
 
@@ -12,6 +12,7 @@
                 <Button on:click={() => signIn("github")}>Sign In with GitHub</Button>
             {:else}
                 <p class="text-gray-300">You are not permitted to view this page</p>
+                <Button on:click={() => signOut()}>Sign Out</Button>
             {/if}
         </div>
     </div>
