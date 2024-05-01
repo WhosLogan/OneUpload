@@ -4,12 +4,6 @@
       "name": "FileRequest",
       "columns": [
         {
-          "name": "max_size",
-          "type": "float",
-          "notNull": true,
-          "defaultValue": "0"
-        },
-        {
           "name": "secret",
           "type": "string",
           "unique": true
@@ -30,6 +24,20 @@
         },
         {
           "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "note",
+          "type": "string"
+        },
+        {
+          "name": "max_size",
+          "type": "int",
+          "notNull": true,
+          "defaultValue": "5"
+        },
+        {
+          "name": "file_name",
           "type": "string"
         }
       ]
